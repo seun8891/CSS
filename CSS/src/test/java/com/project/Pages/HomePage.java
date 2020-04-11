@@ -1,5 +1,17 @@
 package com.project.Pages;
 
-public class HomePage {
+import org.openqa.selenium.WebElement;
+
+import com.project.Helper.BaseClass;
+
+public class HomePage extends BaseClass 
+{
+	private WebElement email;
+	
+	public void andinputemail() throws Exception
+	{
+		email= getElementById("email");
+		email.sendKeys("seunakinbode@yahoo.com");
+	}
 
 }
